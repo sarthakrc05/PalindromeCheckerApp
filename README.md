@@ -1,1 +1,1 @@
-# PalindromeCheckerApp
+I am using Java to write this Program & This is the entry point of the system
