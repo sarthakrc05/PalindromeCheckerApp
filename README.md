@@ -1,1 +1,3 @@
-I am using Java to write this Program & This is the entry point of the system
+Used only main method
+Swiftly checks for palindrome string
+User input & output

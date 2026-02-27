@@ -1,13 +1,32 @@
-/*
-Version 1.0
-Author Sarthak
-useCase1: Welcome Page
- */
+import java.util.Scanner;
 public class PalindromeCheckerApp
 {
     public static void main(String[] args)
     {
-        System.out.println("Welcome to Palindrome Checker Management System\nVersion 1.0\n" +
-                "System Initialised Successfully");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = sc.nextLine();
+        input = input.replaceAll("\\s+", "").toLowerCase();
+        boolean isPalindrome = true;
+        int left = 0;
+        int right = input.length() - 1;
+        while (left < right)
+        {
+            if (input.charAt(left) != input.charAt(right))
+            {
+                isPalindrome = false;
+                break;
+            }
+            left++;
+            right--;
+        }
+        if (isPalindrome)
+        {
+            System.out.println("Palindrome");
+        } else
+        {
+            System.out.println("Not a Palindrome");
+        }
+        sc.close();
     }
 }
